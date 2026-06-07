@@ -1,6 +1,6 @@
 # 🚀 Pocket Management
 
-🌍 **Choose your language / Pilih bahasa / 言語を選択:**
+🌍 **language option / Pilihan bahasa / 言語を選択:**
 [🇮🇩 Bahasa Indonesia](#-bahasa-indonesia) | [🇬🇧 English](#-english) | [🇯🇵 日本語 (Japanese)](#-日本語-japanese)
 
 ---
