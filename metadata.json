@@ -1,0 +1,6 @@
+{
+  "name": "Pocket Management",
+  "description": "An interactive, playful and modern single-page hub featuring a Habit Tracker, Todo List, Finance Manager, Quick Sticky Notes, and retro mini-games.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

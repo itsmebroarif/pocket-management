@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <!-- Definition of gradients for rich 16-bit retro feeling -->
+  <defs>
+    <linearGradient id="pocketBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e1b4b" />
+      <stop offset="100%" stop-color="#090514" />
+    </linearGradient>
+    <linearGradient id="glowGrd" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ec38bc" />
+      <stop offset="50%" stop-color="#a855f7" />
+      <stop offset="100%" stop-color="#3b82f6" />
+    </linearGradient>
+    <linearGradient id="screenGrd" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#11132e" />
+      <stop offset="100%" stop-color="#1a123f" />
+    </linearGradient>
+    <linearGradient id="chartGrd" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ec38bc" />
+      <stop offset="100%" stop-color="#fdf057" />
+    </linearGradient>
+  </defs>
+
+  <!-- Base Rounded Container with glow -->
+  <rect x="24" y="24" width="464" height="464" rx="100" fill="url(#pocketBg)" stroke="#2e1a4f" stroke-width="8" />
+  
+  <!-- Outer Neon Glow Border -->
+  <rect x="32" y="32" width="448" height="448" rx="92" fill="none" stroke="url(#glowGrd)" stroke-width="12" opacity="0.85" />
+
+  <!-- Retro Handheld Console Body -->
+  <g transform="translate(116, 50)">
+    <!-- Main Device Chassis -->
+    <rect x="0" y="0" width="280" height="400" rx="24" fill="#131535" stroke="#000" stroke-width="8" />
+    <rect x="8" y="8" width="264" height="384" rx="16" fill="none" stroke="#ec38bc" stroke-width="4" opacity="0.6" />
+
+    <!-- Screen Bezel -->
+    <rect x="20" y="24" width="240" height="170" rx="12" fill="#0b0a1a" stroke="#000" stroke-width="6" />
+    
+    <!-- Screen Viewport (Active) -->
+    <rect x="32" y="36" width="216" height="142" rx="4" fill="url(#screenGrd)" />
+    
+    <!-- Gridlines on screen for 16-bit tracker vibe -->
+    <line x1="32" y1="71" x2="248" y2="71" stroke="#31255a" stroke-width="1" />
+    <line x1="32" y1="106" x2="248" y2="106" stroke="#31255a" stroke-width="1" />
+    <line x1="32" y1="141" x2="248" y2="141" stroke="#31255a" stroke-width="1" />
+    <line x1="86" y1="36" x2="86" y2="178" stroke="#31255a" stroke-width="1" />
+    <line x1="140" y1="36" x2="140" y2="178" stroke="#31255a" stroke-width="1" />
+    <line x1="194" y1="36" x2="194" y2="178" stroke="#31255a" stroke-width="1" />
+
+    <!-- Chart Tracker Nodes (Visualizing Productivity Analytics) -->
+    <path d="M 45,150 L 90,110 L 135,130 L 180,75 L 225,55" fill="none" stroke="url(#chartGrd)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+    <circle cx="45" cy="150" r="6" fill="#ec38bc" stroke="#fff" stroke-width="2" />
+    <circle cx="90" cy="110" r="6" fill="#8b5cf6" stroke="#fff" stroke-width="2" />
+    <circle cx="135" cy="130" r="6" fill="#3b82f6" stroke="#fff" stroke-width="2" />
+    <circle cx="180" cy="75" r="6" fill="#f59e0b" stroke="#fff" stroke-width="2" />
+    <circle cx="225" cy="55" r="8" fill="#fdf057" stroke="#fff" stroke-width="2" />
+
+    <!-- Power Indicator LED (Glowing Green) -->
+    <circle cx="12" cy="110" r="5" fill="#10b981" />
+    <circle cx="12" cy="110" r="8" fill="none" stroke="#10b981" stroke-width="2" opacity="0.5" />
+
+    <!-- Controls Sub-Panel (D-Pad and circular arcade buttons) -->
+    <!-- D-Pad (Left controls) -->
+    <g transform="translate(40, 234)">
+      <!-- Horizontal cross -->
+      <rect x="0" y="16" width="48" height="16" fill="#000" rx="3" />
+      <rect x="2" y="18" width="44" height="12" fill="#2d3748" rx="2" />
+      <!-- Vertical cross -->
+      <rect x="16" y="0" width="16" height="48" fill="#000" rx="3" />
+      <rect x="18" y="2" width="12" height="44" fill="#2d3748" rx="2" />
+      <!-- Center joint -->
+      <rect x="16" y="16" width="16" height="16" fill="#1a202c" />
+    </g>
+
+    <!-- Action Buttons (Right controls) -->
+    <!-- Button B (Pink) -->
+    <circle cx="185" cy="268" r="18" fill="#000" />
+    <circle cx="185" cy="268" r="14" fill="#ec38bc" />
+    <!-- Button A (Cyan) -->
+    <circle cx="230" cy="246" r="18" fill="#000" />
+    <circle cx="230" cy="246" r="14" fill="#06b6d4" />
+    
+    <!-- Audio Speaker Grills at Bottom Right -->
+    <g transform="translate(190, 345)">
+      <line x1="0" y1="0" x2="16" y2="24" stroke="#000" stroke-width="5" stroke-linecap="round" />
+      <line x1="10" y1="0" x2="26" y2="24" stroke="#000" stroke-width="5" stroke-linecap="round" />
+      <line x1="20" y1="0" x2="36" y2="24" stroke="#000" stroke-width="5" stroke-linecap="round" />
+    </g>
+
+    <!-- Select / Start Rubber Buttons -->
+    <g transform="translate(100, 320)">
+      <rect x="0" y="0" width="28" height="10" rx="5" fill="#4b5563" stroke="#000" stroke-width="2" transform="rotate(-25)" />
+      <rect x="40" y="0" width="28" height="10" rx="5" fill="#4b5563" stroke="#000" stroke-width="2" transform="rotate(-25)" />
+    </g>
+  </g>
+  
+  <!-- "16-BIT" emblem underneath the retro console badge -->
+  <text x="50%" y="430" text-anchor="middle" font-family="'Press Start 2P', monospace" font-size="14" font-weight="900" fill="#fdf057" letter-spacing="4">POCKET COMPANION</text>
+  <text x="50%" y="452" text-anchor="middle" font-family="'Press Start 2P', monospace" font-size="9" font-weight="700" fill="#64748b" letter-spacing="2">TRACKER * PWA READY</text>
+</svg>
